@@ -1,0 +1,100 @@
+@import url(./fonts/stylesheet.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+label,
+button {
+  font-weight: bold;
+}
+
+.icon-person {
+  background-image: url(./images/icon-person.svg);
+  background-position: center;
+}
+.active {
+  background-color: hsl(172, 67%, 45%);
+  color: black;
+}
+.active:hover {
+  background-color: hsl(172, 54%, 63%);
+}
+
+@layer components {
+  .tip-percent-select {
+    @apply text-center px-8 py-2 text-xl sm:text-lg bg-dark-cyan text-white rounded-lg cursor-pointer hover:scale-105 transition duration-200 ease-in-out;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+footer {
+  margin: 15px auto;
+  background: #000000;
+  color: white;
+  padding: 0.7em;
+  outline: 2px dashed #ffffff;
+  outline-offset: -5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 1s ease;
+  margin-top: auto;
+}
+footer:hover {
+  color: rgb(0, 255, 170);
+  text-decoration: underline;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+footer .logo {
+  width: 2em;
+  height: 2em;
+  margin: 0 16px;
+  border-radius: 50%;
+  position: relative;
+  background: transparent;
+
+  display: grid;
+  place-items: center;
+}
+footer img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+footer:hover img {
+  transform: rotate(360deg) scale(1.7);
+}
+
+main {
+  animation: fadeup ease-in 500ms;
+}
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
