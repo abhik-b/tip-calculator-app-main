@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link href="build.css" rel="stylesheet" />
     <link
       rel="icon"
@@ -11,14 +10,16 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Abhik B | Tip calculator app</title>
   </head>
 
   <body
     class="font-mono bg-light-cyan-1 min-h-screen flex flex-col items-center sm:pt-6 md:pt-12"
   >
-    <h1 class="text-dark-cyan text-2xl p-8 xl:p-16 tracking-[.5em]">
+    <h1
+      role="heading"
+      class="text-dark-cyan text-2xl p-8 xl:p-16 tracking-[.5em]"
+    >
       SPLI <br />
       TTER
     </h1>
@@ -121,24 +122,24 @@
               Tip Amount
               <span class="block text-sm text-grayish-cyan-1">/ person</span>
             </p>
-            <h3
+            <p
               id="tip-amount"
               class="text-strong-cyan text-3xl lg:text-5xl font-bold"
             >
               ₹4.27
-            </h3>
+            </p>
           </div>
           <div class="flex justify-between my-4 lg:my-8">
             <p class="text-white text-base">
               Total
               <span class="block text-sm text-grayish-cyan-1">/ person</span>
             </p>
-            <h3
+            <p
               id="total"
               class="text-strong-cyan text-3xl lg:text-5xl font-bold"
             >
               ₹32.79
-            </h3>
+            </p>
           </div>
           <button
             id="reset"

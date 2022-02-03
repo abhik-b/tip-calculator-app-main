@@ -5,7 +5,10 @@ const reset = document.getElementById("reset");
 const total = document.getElementById("total");
 const tipAmount = document.getElementById("tip-amount");
 const tip_percent_selects = document.querySelectorAll(".tip-percent-select");
-let tipPercent = 5;
+let tipPercent = 15;
+
+setTipValue(bill.value, tipPercent);
+setTotalValue(bill.value, people.value, tipPercent);
 
 //selecting tip percent
 tip_percent_selects.forEach(function (tp_select) {
