@@ -10,10 +10,6 @@ button {
   font-weight: bold;
 }
 
-.icon-person {
-  background-image: url(./images/icon-person.svg);
-  background-position: center;
-}
 .active {
   background-color: hsl(172, 67%, 45%);
   color: black;
